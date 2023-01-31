@@ -37,12 +37,12 @@
 		}
 
 		.img-item-transition{
-		  width: 100%;
-		  height: 100%;
+		  width: 101%;
+		  height: 101%;
 		  background-color: #101010;
 		  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
 		  position: absolute;
-		  inset: 0;
+		  inset: -1px;
 		  z-index: 91;
 		  will-change: clipPath;
 		}
