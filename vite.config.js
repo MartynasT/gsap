@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         day1: resolve(__dirname, 'day1/index.html'),
+        day2: resolve(__dirname, 'day2/index.html'),
       },
     },
   },
