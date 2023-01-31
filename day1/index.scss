@@ -1,0 +1,87 @@
+$grayModern600: #4B5565;
+
+.animated-cards-on-load{
+
+  .hero{
+	padding-top: 96px;
+	background-color: $grayModern600;
+	//min-height: 100vh;
+
+	.wrapper{
+	  max-width: 1280px;
+	  padding: 0 32px;
+	  margin: 0 auto;
+	  text-align: center;
+
+	  p{
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 12px;
+		font-weight: 500;
+
+		&:last-of-type{
+		  margin-bottom: 0;
+		}
+	  }
+
+	  h1{
+		font-size: 72px;
+		line-height: 90px;
+		font-weight: 700;
+	  }
+	}
+
+	.text{
+	  margin-bottom: 64px;
+	}
+
+	.cards{
+	  padding-top: 20px;
+	  height: 50vh;
+	  max-height: 456px; //design desktop
+	  min-height: 184px; //design mobile
+	  position: relative;
+	  overflow: hidden;
+	  //writing-mode: vertical-rl;
+
+	  .card{
+		position: absolute;
+		transform-origin:  center 130%;
+		left: 50%;
+		transform: translateX(-50%) rotate(0deg);
+		display: inline-block;
+		overflow: visible;
+		//backdrop-filter: blur(7px);
+
+		&:nth-last-of-type(1){
+		  transform: translateX(-50%) rotate(300deg);
+		}
+
+		&:nth-last-of-type(2){
+		  transform: translateX(-50%) rotate(330deg);
+		  z-index: 2;
+		}
+
+		&:nth-last-of-type(3){
+		  transform: translateX(-50%) rotate(360deg);
+		  z-index: 3;
+		}
+
+		&:nth-last-of-type(4){
+		  transform: translateX(-50%) rotate(390deg);
+		  z-index: 4;
+		}
+
+		&:nth-last-of-type(5){
+		  transform: translateX(-50%) rotate(420deg);
+		  z-index: 5;
+		}
+		img{
+		  display: block;
+		}
+	  }
+	}
+  }
+}
+
+
