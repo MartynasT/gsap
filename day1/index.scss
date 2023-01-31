@@ -51,7 +51,8 @@ $grayModern600: #4B5565;
 		transform: translateX(-50%) rotate(0deg);
 		display: inline-block;
 		overflow: visible;
-		//backdrop-filter: blur(7px);
+		backdrop-filter: blur(7px);
+		border-radius: 35px;
 
 		&:nth-last-of-type(1){
 		  transform: translateX(-50%) rotate(300deg);
