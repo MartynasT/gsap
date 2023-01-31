@@ -107,14 +107,14 @@
   });
 
   cards.forEach((card, index)=>{
-    gsap.set(card, {rotate: 300, x: '-50%'})
+    gsap.set(card, {rotate: 300, xPercent: '-50'})
   })
 
   function rotate(){
     cards.forEach((card, index)=>{
       const scaleVal = distributor(index, cards[index], cards);
       console.log(scaleVal);
-      gsap.to(card, {rotate: scaleVal, x: '-50%', duration: 1})
+      gsap.to(card, {rotate: scaleVal,  duration: 1})
     })
   }
 
